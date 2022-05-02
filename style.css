@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    position: static;
+    background-color: aquamarine;
+    text-align: center;
+    position: sticky;
+    font-size: 62.5%;
+    font-size: 1rem;
+}
+main {
+    position: relative;
+    border: 7px solid rgb(248, 89, 89);
+    height: 100%;
+    padding: 10px 0 1% 0;
+    margin: 10px 7% 10px 7%;
+    border-radius: 0 0 90px 90px;
+}
+h1 {
+    margin: 0 10px 10px 10px;
+}
+strong {
+    font-size: 20px;
+}
+
+
+.blockMain_square, .blockMain_triangle, .blockMain_rectangle, .blockMain_circle {
+    position: relative;
+    display: none;
+    border-radius: 1rem;
+    margin: 1% 5%;
+}
+.blockMain_square span, .blockMain_triangle span, .blockMain_rectangle span, .blockMain_circle span {
+    position: relative;
+    border-bottom: 10rem;
+    top: 0.4rem;
+}
+.blockMain_square p, .blockMain_triangle p, .blockMain_rectangle p, .blockMain_circle p {
+    position: relative;
+    padding: 0.5rem;
+    top: 0.5rem;
+}
+.resultSquareArea, .resultTriangleArea, .resultRectangleArea, .resultCircleArea {
+    position: relative;
+    bottom: 0.4rem;
+    margin: 0 27%;
+    border-radius: 5px;
+}
+.blockMain_triangle h5 {
+    margin-top: 2%;
+}
+
+
+.blockMain_square {
+    background-color: rgb(247, 240, 142);
+}
+.blockMain_triangle {
+    background-color: rgb(248, 150, 150);
+}
+.blockMain_rectangle {
+    background-color: rgb(160, 160, 160);
+}
+.blockMain_circle {
+    background-color: rgb(204, 146, 204);
+}
+
+
+.blockMain_square a, .blockMain_circle a, .blockMain_rectangle a, .blockMain_triangle a{
+    text-decoration: none;
+}
+.blockMain_square a:hover, .blockMain_circle a:hover, .blockMain_rectangle a:hover, .blockMain_triangle a:hover{
+    color: red;
+}
+
+.buttonShow {
+    border-radius: 0.5rem;
+}

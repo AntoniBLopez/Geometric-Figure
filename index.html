@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Get the value of the area of the geometric figure you want">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Value of Area</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="blockMain">
+        <h1>Get the value of the area of the geometric figure you want</h1>
+
+        <label for="userFigureGeometric" class="drop_downList">
+            <span>Choose one of the geometric figures from the drop-down list:</span>
+            <input list="geometricFigures" id="userFigureGeometric" required>
+            <datalist id="geometricFigures">
+                <option value="Square" class="selectSquare"></option>
+                <option value="Triangle" class="selectTriangle"></option>
+                <option value="Rectangle" class="selectRectangle"></option>
+                <option value="Circle" class="selectCircle"></option>
+            </datalist>
+            <input type="submit" class='buttonShow' onclick="showDataToCalculateGeometricFigure()" value="Show 👁️">
+        </label>
+
+        <p>
+
+        <div id="enterSquareData" class="blockMain_square">
+            <label for="userSquareSide">
+                <strong><span>🟨Enter the length in centimeters of one side of the square:</span></strong>
+                <p>
+                <input type="number" id="userSquareSide" placeholder="5" required>
+                <input type="submit" onclick="showSquareArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaSquare" class="resultSquareArea"></h3>
+                <a href="javascript:void(0)" onclick="hideSquareData()">Click here to hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div id="enterTriangleData" class="blockMain_triangle">
+            <label for="userTriangleBase">
+                <strong><span>🔺Enter the length in centimeters of the base and the height of the triangle:</span></strong>
+                <h5>( The height is the distance between the base and the top vertex )</h5>
+                <p>
+                <input type="number" id="userTriangleBase" placeholder="Base" required>
+                &
+                <input type="number" id="userTriangleHeight" placeholder="Height" required>
+                <input type="submit" onclick="showTriangleArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaTriangle" class="resultTriangleArea"></h3>
+                <a href="javascript:void(0)" onclick="hideTriangleData()">Click here to hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div id="enterRectangleData" class="blockMain_rectangle">
+            <label for="userRectangleSideA">
+                <strong><span>➖Enter the length in centimeters of the two different sides of the rectangle:</span></strong>
+                <p>
+                <input type="number" id="userRectangleSideA" placeholder="Side a" required>
+                &
+                <input type="number" id="userRectangleSideB" placeholder="Side b" required>
+                <input type="submit" onclick="showRectangleArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaRectangle" class="resultRectangleArea"></h3>
+                <a href="javascript:void(0)" onclick="hideRectangleData()">Click here to hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div id="enterCircleData" class="blockMain_circle">
+            <label for="userCircleRadius">
+                <strong><span>🟣Enter the length in centimeters of the radius of the circle:</span></strong>
+                <p>
+                <input type="number" id="userCircleRadius" placeholder="5" required>
+                <input type="submit" onclick="showCircleArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaCircle" class="resultCircleArea"></h3>
+                <a href="javascript:void(0)" onclick="hideCircleData()">Click here to hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div>
+            <h3 class="printResultOnDisplay"></h3>
+        </div>
+
+    </main>
+</body>
+<script src="./project.js"></script>
+</html>
