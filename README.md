@@ -1,4 +1,4 @@
-# Geometric Figure
+# Geometric Figure 🔺🟣🟨➖
 ---
 ### In this project you can calculate the area of the geometric figure you want, it is the first project that i do.
 
